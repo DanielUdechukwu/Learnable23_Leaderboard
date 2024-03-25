@@ -22,13 +22,17 @@ const Home = () => {
             <div className="flex md:flex-row flex-col lg:items-center gap-4">
               <div className="flex md:gap-4 gap-2">
                 <button
-                  className="p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-900 hover:border hover:border-gray-400 border border-gray-900 transition duration-150 ease-out hover:ease-in font-semibold"
+                  className={`${
+                    track === "Frontend" ? "ring-2 ring-inset" : ""
+                  } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Frontend")}
                 >
                   Frontend
                 </button>
                 <button
-                  className="p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-900 hover:border hover:border-gray-400 border border-gray-900 transition duration-150 ease-out hover:ease-in font-semibold"
+                  className={`${
+                    track === "Backend" ? "ring-2 ring-inset" : ""
+                  } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Backend")}
                 >
                   Backend
@@ -36,13 +40,17 @@ const Home = () => {
               </div>
               <div className="flex md:gap-4 gap-2">
                 <button
-                  className="p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-900 hover:border hover:border-gray-400 border border-gray-900 transition duration-150 ease-out hover:ease-in font-semibold"
+                  className={`${
+                    track === "Product Design" ? "ring-2 ring-inset" : ""
+                  } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Product Design")}
                 >
                   Product Design
                 </button>
                 <button
-                  className="p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-900 hover:border hover:border-gray-400 border border-gray-900 transition duration-150 ease-out hover:ease-in font-semibold"
+                  className={`${
+                    track === "Web3" ? "ring-2 ring-inset" : ""
+                  } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Web3")}
                 >
                   Web3
