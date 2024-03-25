@@ -23,7 +23,9 @@ const Home = () => {
               <div className="flex md:gap-4 gap-2">
                 <button
                   className={`${
-                    track === "Frontend" ? "ring-2 ring-inset" : ""
+                    track === "Frontend"
+                      ? "ring-2 ring-inset ring-rose-700"
+                      : ""
                   } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Frontend")}
                 >
@@ -31,7 +33,7 @@ const Home = () => {
                 </button>
                 <button
                   className={`${
-                    track === "Backend" ? "ring-2 ring-inset" : ""
+                    track === "Backend" ? "ring-2 ring-inset ring-rose-700" : ""
                   } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Backend")}
                 >
@@ -41,7 +43,9 @@ const Home = () => {
               <div className="flex md:gap-4 gap-2">
                 <button
                   className={`${
-                    track === "Product Design" ? "ring-2 ring-inset" : ""
+                    track === "Product Design"
+                      ? "ring-2 ring-inset ring-rose-700"
+                      : ""
                   } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Product Design")}
                 >
@@ -49,7 +53,7 @@ const Home = () => {
                 </button>
                 <button
                   className={`${
-                    track === "Web3" ? "ring-2 ring-inset" : ""
+                    track === "Web3" ? "ring-2 ring-inset ring-rose-700" : ""
                   } p-2 bg-black bg-opacity-20 rounded-lg text-[.8rem] text-gray-400 w-[8rem] hover:bg-gray-800 transition duration-150 ease-out hover:ease-in font-semibold`}
                   onClick={() => handleTrackSelect("Web3")}
                 >
